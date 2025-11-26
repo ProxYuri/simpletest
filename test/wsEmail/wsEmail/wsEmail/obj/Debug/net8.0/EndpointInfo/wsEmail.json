@@ -1,0 +1,51 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "EmailSvc",
+    "description": "Swagger UI - Email Svc",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Emails": {
+      "post": {
+        "tags": [
+          "Email"
+        ],
+        "parameters": [
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "body",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { },
+  "tags": [
+    {
+      "name": "Email"
+    }
+  ]
+}
